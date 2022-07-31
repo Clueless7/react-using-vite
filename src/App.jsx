@@ -27,7 +27,7 @@ function App() {
 
   function handleSubmit(e) {
     e.preventDefault()
-    alert(`Hello ${name}`)
+    alert(name ? `Hello ${name}` : 'Please enter a name')
   }
 
   return (
