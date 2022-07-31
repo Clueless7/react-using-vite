@@ -34,8 +34,16 @@ function App() {
     <div className="App">
       <form style={formStyles} onSubmit={handleSubmit}>
         <label htmlFor="name">Name: </label>
-        <input style={marginTop} id="name" type="text" onChange={handleChange} value={name}/>
-        <button style={marginTop} type="submit">Submit</button>
+        <input
+          style={marginTop}
+          id="name"
+          type="text"
+          onChange={handleChange}
+          value={name}
+        />
+        <button style={marginTop} type="submit">
+          Submit
+        </button>
         <p>{name ? <strong>Hello {name}</strong> : 'Please enter your name'}</p>
       </form>
     </div>
