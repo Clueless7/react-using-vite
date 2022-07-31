@@ -14,7 +14,7 @@ const marginTop = {
 
 function App() {
   const [name, setName] = React.useState(
-    window.localStorage.getItem('name') || ''
+    () => window.localStorage.getItem('name') || ''
   )
 
   React.useEffect(() => {
