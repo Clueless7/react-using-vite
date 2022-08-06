@@ -19,7 +19,7 @@ function App() {
 
   React.useEffect(() => {
     window.localStorage.setItem('name', name)
-  })
+  }, [name])
 
   function handleChange(e) {
     setName(e.target.value)
